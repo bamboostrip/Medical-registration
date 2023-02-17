@@ -11,7 +11,8 @@ import { createPinia } from 'pinia'
 import App from "./App.vue";
 //创建pinia实例
 const pinia = createPinia()
-let master = 1
+// let master = 1
+//这是一个master的测试
 export function createApp() {
   const app = createSSRApp(App);
   app.use(pinia)
