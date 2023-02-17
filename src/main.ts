@@ -17,6 +17,9 @@ const pinia = createPinia()
 =======
 //这是一个关于bamboo的测试
 >>>>>>> bamboo
+
+
+let bamboo = 2
 export function createApp() {
   const app = createSSRApp(App);
   app.use(pinia)
