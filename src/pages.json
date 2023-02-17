@@ -1,0 +1,275 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/registered/registered",
+			"style": {
+				"navigationBarTitleText": "预约挂号"
+			}
+		},
+		{
+			"path": "pages/video/video",
+			"style": {
+				"navigationBarTitleText": "医师课堂"
+			}
+		},
+		{
+			"path": "pages/xinguan-vaccine/xinguan-vaccine",
+			"style": {
+				"navigationBarTitleText": "新冠疫苗接种预约"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#E3EFFF"
+			}
+		},
+		{
+			"path": "pages/login-page/index",
+			"style": {
+				"navigationBarTitleText": "用户登录",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/my-service/xinguan/index",
+			"style": {
+				"navigationBarTitleText": "新冠疫苗预约订单",
+		"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/hpv-vaccine/hpv-vaccine",
+			"style": {
+				"navigationBarTitleText": "宫颈癌疫苗在线预约"
+			}
+		},
+		{
+			"path": "pages/hpv-vaccine/hpv-buy",
+			"style": {
+				"navigationBarTitleText": "HPV套餐详情"
+			}
+		},
+		{
+			"path": "pages/my-service/hpv-view/index",
+			"style": {
+				"navigationBarTitleText": "HPV疫苗预约订单",
+		"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/nucleic-acid/index",
+			"style": {
+				"navigationBarTitleText": "核酸检测预约"
+			}
+		},
+		{
+			"path": "pages/my-service/nucleic-acid/index",
+			"style": {
+				"navigationBarTitleText": "核酸检测预约订单",
+		"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/graphics/index",
+			"style": {
+				"navigationBarTitleText": "图文咨询"
+			}
+		},
+		{
+			"path": "pages/my-service/my-patient/add-patient",
+			"style": {
+				"navigationBarTitleText": "创建就诊人"
+			}
+		},
+		{
+			"path": "pages/my-service/my-patient/my-patient",
+			"style": {
+				"navigationBarTitleText": "我的就诊人"
+			}
+		},
+		{
+			"path": "pages/phy-exam/index",
+			"style": {
+				"navigationBarTitleText": "体检预约",
+		"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/phy-exam/Details",
+			"style": {
+				"navigationBarTitleText": "体检详情"
+			}
+		},
+		{
+			"path": "pages/my-service/phy-exam/index",
+			"style": {
+				"navigationBarTitleText": "体检预约订单",
+		"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/self-test/topic",
+			"style": {
+				"navigationBarTitleText": "测评题目",
+		"navigationBarBackgroundColor": "#D6E8FF"
+			}
+		},
+		{
+			"path": "pages/self-test/result",
+			"style": {
+				"navigationBarTitleText": "测试结果",
+		"navigationBarBackgroundColor": "#D6E8FF"
+				
+			}
+		},
+		{
+			"path": "pages/doctor/index",
+			"style": {
+				"navigationBarTitleText": "选择医生",
+		"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/doctor/doctor-Homepage",
+			"style": {
+				"navigationBarTitleText": "医生主页",
+		"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/my-service/my-registration/index",
+			"style": {
+				"navigationBarTitleText": "挂号记录",
+		"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color": "#7A7E83",
+		"selectedColor": "#3CC51F",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list":[
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tab/shouye-001.png",
+				"selectedIconPath": "static/tab/shouye-002.png"
+			},
+			{
+				"pagePath": "pages/registered/registered",
+				"text": "挂号",
+				"iconPath": "static/tab/guahao-001.png",
+				"selectedIconPath": "static/tab/guahao-002.png"
+			},
+			{
+				"pagePath": "pages/video/video",
+				"text": "医师课堂",
+				"iconPath": "static/tab/shipin-001.png",
+				"selectedIconPath": "static/tab/shipin-002.png"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/tab/wode-001.png",
+				"selectedIconPath": "static/tab/wode-002.png"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+	"current": 2, //当前激活的模式（list 的索引项）
+	"list": [{
+			"name": "xinguan", //模式名称
+			"path": "pages/xinguan-vaccine/xinguan-vaccine" //启动页面，必选
+		},
+		{
+			"name": "login", 
+			"path": "pages/login-page/index" 
+		},
+		{
+			"name": "新冠预约订单",
+			"path": "pages/my-service/xinguan/index" 
+		},
+		{
+			"name": "HPV预约",
+			"path": "pages/hpv-vaccine/hpv-vaccine" 
+		},
+		{
+			"name": "HPV购买",
+			"path": "pages/hpv-vaccine/hpv-buy" 
+		},
+		{
+			"name": "HPV订单",
+			"path": "pages/my-service/phy-exam/index" 
+		},
+		{
+			"name": "核酸检测",
+			"path": "pages/nucleic-acid/index" 
+		},
+		{
+			"name": "核酸订单",
+			"path": "pages/my-service/nucleic-acid/index" 
+		},
+		{
+			"name": "图文就诊",
+			"path": "pages/graphics/index" 
+		},
+		{
+			"name": "创建就诊",
+			"path": "pages/my-service/my-patient/add-patient" 
+		},
+		{
+			"name": "就诊管理",
+			"path": "pages/my-service/my-patient/my-patient" 
+		},
+		{
+			"name": "体检预约",
+			"path": "pages/phy-exam/index" 
+		},
+		{
+			"name": "体检详情",
+			"path": "pages/phy-exam/Details" 
+		},
+		{
+			"name": "体检订单",
+			"path": "pages/my-service/phy-exam/index" 
+		},
+		{
+			"name": "测试页面",
+			"path": "pages/self-test/topic" 
+		},
+		{
+			"name": "测试结果",
+			"path": "pages/self-test/result" 
+		},
+		{
+			"name": "选择医生",
+			"path": "pages/doctor/index" 
+		},
+		{
+			"name": "医生主页",
+			"path": "pages/doctor/doctor-Homepage" 
+		},
+		{
+			"name": "挂号订单",
+			"path": "pages/my-service/my-registration/index" 
+		}
+	]
+}
+	
+}
