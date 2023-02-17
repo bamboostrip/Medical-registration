@@ -21,8 +21,8 @@
     </view>
   </view>
 
-<!-- 骨架屏 -->
-<skIndex v-if="skeLeton" />
+  <!-- 骨架屏 -->
+  <skIndex v-if="skeLeton" />
 </template>
 
 <script setup lang="ts">
@@ -41,7 +41,7 @@ let previously = ref('')
 
 //接收上页面数据
 onLoad((e) => {
-  let {type,name} = e as {type: string,name:string}
+  let { type, name } = e as { type: string, name: string }
   previously.value = type
   uni.setNavigationBarTitle({
     title: name
@@ -83,7 +83,7 @@ onShow(async () => {
   eachQuest.data = res.data.data[0]
 
   percent.value = (100 / questNum.value)
-  skeLeton.value =false
+  skeLeton.value = false
 })
 
 //存储每一道题下标:初次进入
@@ -113,8 +113,7 @@ const chosse = (id: string) => {
   addTo.value++
   //存储每一次选项
   topicId.data.push(id)
-  //进度条计算
-  percent.value = (100 / questNum.value) * addQuest.value
+
   if (addTo.value === questNum.value) {
     let OBJ = JSON.stringify({ type: previously.value, id: topicId.data, })
     uni.navigateTo({
@@ -122,6 +121,8 @@ const chosse = (id: string) => {
     })
   } else {
     addQuest.value++
+    //进度条计算
+    percent.value = (100 / questNum.value) * addQuest.value
     eachQuest.data = topicData.value[addTo.value]
   }
 }
